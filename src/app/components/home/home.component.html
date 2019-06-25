@@ -1,0 +1,11 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">PelículasApp</h1>
+    <p class="lead">Esta es una aplicación de películas que trabaja con la API de TheMovieDB</p>
+  </div>
+</div>
+<div class="container main-container">
+  <app-galeria [peliculas]="cartelera | slice: 0:6" titulo="Películas en cartelera"></app-galeria>
+  <app-galeria [peliculas]="populares | slice: 0:6" titulo="Populares"></app-galeria>
+  <app-galeria [peliculas]="popuNinios | slice: 0:6" titulo="Populares entre los más pequeños"></app-galeria>
+</div>
